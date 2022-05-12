@@ -1,7 +1,6 @@
 {
   "name": "web",
   "version": "1.0.0",
-  "description": "",
   "main": "back.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,5 +27,14 @@
   "devDependencies": {
     "@types/node": "^17.0.31",
     "nodemon": "^2.0.16"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YaKartoshka/Web-Backend2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YaKartoshka/Web-Backend2/issues"
+  },
+  "homepage": "https://github.com/YaKartoshka/Web-Backend2#readme",
+  "description": ""
 }
