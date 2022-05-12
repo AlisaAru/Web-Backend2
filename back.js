@@ -33,11 +33,10 @@ const { response } = require("express");
 app.set('view engine', 'ejs');
 app.use("/public", express.static(__dirname + "/public"));
  
-app.get('/',function (req,res){
-    res.render('sign_in')
-    .get('/cool', (req, res) => res.send(cool()));
+//app.get('/',function (req,res){
+//    res.render('sign_in')
     
-})
+//})
 
 app.get('/main',function (req,res){
     https.get(ownSite, function(response){
@@ -50,6 +49,9 @@ app.get('/main',function (req,res){
    });
     
 })
+app
+  .get('/', (req, res) => res.render('pages/index'))
+  .get('/cool', (req, res) => res.send(cool()))
 
 app.get('/about_css',function (req,res){
     https.get(ownSite, function(response){
