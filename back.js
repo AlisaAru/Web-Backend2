@@ -1,7 +1,7 @@
 const express = require("express");
 const path=require('path');
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 const https=require('https');
 const apiKey="9d871ad2b9208dc3684541b72083256e";
 const city="Nur-sultan";
