@@ -13,7 +13,7 @@ const userRoute=require('./routes/userRoutes.js')
 let urlencodedParser = bodyParser.urlencoded({ extended: false });
 const dbConfig = require('./config/database.config.js');
 const mongoose=require('mongoose');
-
+const cool = require('cool-ascii-faces');
 app.use('/', userRoute);
 app.use(express.json());
 mongoose.Promise=global.Promise;
@@ -35,6 +35,7 @@ app.use("/public", express.static(__dirname + "/public"));
  
 app.get('/',function (req,res){
     res.render('sign_in')
+    .get('/cool', (req, res) => res.send(cool()));
     
 })
 
