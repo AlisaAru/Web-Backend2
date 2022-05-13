@@ -82,9 +82,7 @@ app.get('/about_html',function (req,res){
 
    });
 })
-app.get('/sign_in',function (req,res){
-    res.render('sign_in')
-})
+
 app.get('/sign_up',function (req,res){
     res.render('sign_up')
 })
