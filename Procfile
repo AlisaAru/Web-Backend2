@@ -1,1 +1,1 @@
-web: node back
+web:node back
